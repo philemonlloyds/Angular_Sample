@@ -5,10 +5,11 @@
     <hr>
     <ul class="list-group">
       <a 
-      href="" 
+      href="#" 
       class="list-group-item"
       style="cursor:pointer"
       *ngFor = "let i of ingredients"
+      (click) = "onItemSelected($event)"
       >
       {{i.name}} ({{ i.amount }})
       </a>
